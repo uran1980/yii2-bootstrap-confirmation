@@ -1,7 +1,7 @@
 {
     "name": "uran1980/yii2-bootstrap-confirmation",
     "description": "Bootstrap plugin for on-place confirm boxes using Popover for Yii2",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "yii2-extension",
     "keywords": [
         "yii2",
