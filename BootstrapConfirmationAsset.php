@@ -24,10 +24,37 @@ class BootstrapConfirmationAsset extends \yii\web\AssetBundle
     {
         parent::init();
 
-        $view = Yii::$app->view;
+        $this
+            ->registerJs()
+            ->registerCss()
+        ;
+    }
+
+    /**
+     * @return BootstrapConfirmationAsset
+     */
+    protected function registerJs()
+    {
         $js = <<<SCRIPT
 jQuery('[data-toggle="confirmation"]').confirmation();
 SCRIPT;
-        $view->registerJs($js, \yii\web\View::POS_READY);
+        Yii::$app->view->registerJs($js, \yii\web\View::POS_READY);
+
+        return $this;
+    }
+
+    /**
+     * @return BootstrapConfirmationAsset
+     */
+    protected function registerCss()
+    {
+        $css = <<<STYLE
+.popover.confirmation {
+    white-space: nowrap;
+}
+STYLE;
+        Yii::$app->view->registerCss($css);
+
+        return $this;
     }
 }
