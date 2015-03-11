@@ -52,7 +52,13 @@ class AppAsset extends \yii\web\AssetBundle
 }
 ```
 
-That's it. For more info see [Bootstrap Confirmation](http://mistic100.github.io/Bootstrap-Confirmation/) main project page.
+That's it. In the View add button like this:
+
+```html
+<button class="btn btn-default" data-toggle="confirmation">Confirmation</button>
+```
+
+For more info see [Bootstrap Confirmation](http://mistic100.github.io/Bootstrap-Confirmation/) main project page.
 
 
 ## Author
