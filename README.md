@@ -7,6 +7,8 @@ Based on **[BootstrapConfirmation](http://mistic100.github.io/Bootstrap-Confirma
 
 Bootstrap Confirmation - is Bootstrap plugin for on-place confirm boxes using Popover.
 
+![sshot-1](https://cloud.githubusercontent.com/assets/1616795/6599520/efa717fe-c812-11e4-9916-5e3e171c1f7c.png)
+
 
 ## Installation
 
