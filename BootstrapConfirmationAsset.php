@@ -22,12 +22,12 @@ class BootstrapConfirmationAsset extends \yii\web\AssetBundle
      */
     public function init()
     {
-        parent::init();
-
         $this
             ->registerJs()
             ->registerCss()
         ;
+
+        parent::init();
     }
 
     /**
